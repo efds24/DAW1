@@ -1,0 +1,21 @@
+@import "navbar.css";
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #393939;
+    color: white;
+}
+p{
+    text-align: justify;
+}
+.intro{
+    font-size: 15pt;
+}
+h2{
+    font-size: 20pt;
+    font-family: "Snap ITC";
+}
+h1{
+    margin-left: 0%;
+    margin-right: 0%;
+}

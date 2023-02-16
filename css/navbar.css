@@ -1,0 +1,26 @@
+ul.navbar {
+    position: float;
+    left: 1em;
+    height: 100%;
+    width: 9em;
+    list-style-type: none;
+    background: grey;
+}
+
+ul.navbar li {
+    margin: 0.5em 0;
+    padding: 0.3em;
+}
+ul.navbar a {
+    text-decoration: none; 
+    color: white;
+}
+a{
+    font-family: Cour;
+}
+a:link {
+    color: black 
+}
+a:visited {
+    color: purple 
+}

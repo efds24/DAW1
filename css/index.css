@@ -1,0 +1,46 @@
+@import "main.css";
+
+.carrusel {
+    overflow: hidden;
+  }
+  
+  .fila {
+    display: flex;
+    width: 100%;
+  }
+  
+  .carrusel-item {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  
+  .carrusel-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .carrusel-item p {
+    margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  /* Animación del carrusel */
+  
+  .fila {
+    animation: carrusel 10s infinite;
+  }
+  
+  @keyframes carrusel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-33.333% - 20px));
+    }
+  }

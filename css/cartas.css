@@ -1,0 +1,42 @@
+@import "main.css";
+
+body{
+    padding:0%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.image {
+    flex: 45%;
+    padding: 20px;
+    
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.text{
+    flex: 40%;
+    padding: 20px;
+}
+
+.text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}

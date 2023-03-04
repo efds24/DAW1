@@ -108,8 +108,11 @@ h1 {
     justify-content: space-between;
     align-items: center;
     height: 200px;
+    position: sticky;
+    background-color: #393939;
+    top: 0;
   }
-  
+
   .header-right img {
     width: 200px;
     height: auto;

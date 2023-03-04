@@ -1,0 +1,172 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: #393939;
+}
+header {
+    background-image: url(../imagenes/inicio.png);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 2.5%;
+  }
+  
+  .logo img {
+    height: 80px;
+    margin-right: 10px;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 3.5%;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+
+  .inicioSeccion {
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 15%; 
+    margin-left: 15%;
+    margin-bottom: 10%; 
+  }
+
+  #juegosLogica > .inicioSeccion {
+    background-image: url(../imagenes/inicioLogica.jpg);
+  } 
+
+  #cartas > .inicioSeccion {
+    background-image: url(../imagenes/inicioCartas.jpg);
+  } 
+
+  #rubik > .inicioSeccion {
+    background-image: url(../imagenes/inicioRubik.jpg);
+  } 
+
+  #juegosMesa > .inicioSeccion {
+    background-image: url(../imagenes/inicioJuegosMesa.jpg);
+  } 
+  
+  .intro {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .intro h2 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .intro p {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .elemento {
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.8);
+  }
+  
+  .elemento img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .elemento h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .elemento p {
+    margin-bottom: 20px;
+  }
+  
+  .elemento button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 10%;
+  }
+  
+  .footer-contenido {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-contenido h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-contenido p {
+    margin-bottom: 20px;
+  }
+  
+  .iconos-redes-sociales a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+  }
+  
+  .iconos-redes-sociales a:hover {
+    color: #ddd;
+  }
+  
+  
+  
+  

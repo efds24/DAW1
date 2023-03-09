@@ -1,159 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradox Logic</title>
     <link rel="icon" href="imagenes/logoarriba.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <!--Logo principal-->
     <header>
-      <div class="header-left">
-        <button id="menu-btn">
-          <img src="imagenes/menu.png" alt="Menu">
-        </button>
-      </div>
-      <div class="header-right">
-        <img src="imagenes/logo.png" alt="logo" id="logo">
-      </div>
-    </header>
-    
-    <!--Menú probablemente que se esconda-->
-    <nav>    
-        <div id="menu">
-          <ul>
-            <li><a href="#">Introducción</a></li>
-            <li><a href="#">Juegos de Lógica</a></li>
-            <li><a href="#">Juegos de Cartas</a></li>
-            <li><a href="#">Juegos de Mesa</a></li>
-            <li><a href="#">Cubos de Rubik</a></li>
-          </ul>
+        <div class="logo">
+            <a href="#"><img src="imagenes/logoarriba.png" alt="Paradox logic"></a>
         </div>
-    </nav>
-    <!--Diferentes section, dentro de cada seccion, foto de seccion, descripcion, carrusel con productos cada producto pequeña descripcion y foto-->
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li class="dropdown">
+                    <a href="#">HOME</a>
+
+                </li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="encabezado-contenido">
+            <h1>Paradox Logic</h1>
+            <p>
+                Bienvenidos a nuestra web de juegos de lógica ¿Estás listo para poner a prueba tus habilidades?
+                ¡Comencemos a jugar!
+            </p>
+        </div>
+    </header>
     <main>
-        <section class="seccion" id="intro">
-            Bienvenidos a nuestra web de juegos de lógica: Paradox Logic, el lugar perfecto para aquellos que buscan desafiar su mente y poner a prueba sus habilidades mentales. Los juegos de lógica son una forma divertida y estimulante de mejorar la concentración, la memoria y la capacidad de resolución de problemas. En esta plataforma, encontrarás una amplia selección de juegos de lógica, como juegos clásicos o cubos de rubik. Además podrás encontrar otros entretenimientos, como juegos de cartas o juegos de mesa tradicionales. Nuestra misión es ofrecer un espacio donde puedas ejercitar tu mente y disfrutar de horas de entretenimiento educativo. ¿Estás listo para poner a prueba tus habilidades? ¡Comencemos a jugar!
-        </section>
-        
-        <section class="seccion" id="logica">
-            <div class="presentacion">
-
+        <section id="juegosLogica">
+            <div class="inicioSeccion">
+                <div class="intro">
+                    <h2>Juegos de lógica</h2>
+                    <p>
+                        Aquí encontrarás una amplia variedad de juegos para poner a prueba tu destreza mental y tu
+                        capacidad de razonamiento. Desde clásicos como el sudoku y el rompecabezas hasta desafíos más
+                        complejos como los juegos de escape y los acertijos, ¡te aseguramos horas de diversión mientras
+                        ejercitas tu cerebro!
+                    </p>
+                </div>
             </div>
-            <div class="carrusel">
-                <div class="fila"></div>
-                    <div class="carrusel-item">
-                    <a href="#">
-                        <img src="ruta_de_la_imagen_1" alt="descripción_de_la_imagen_1">
-                        <p>Descripción del primer elemento.</p>
+            <div class="contenedor">
+                <div class="elemento">
+                    <a href="cartas/sudoku.html">
+                        <img src="imagenes/mementoMori.jpg" alt="Foto 1">
+                        <h3>Título 1</h3>
+                        <p>Descripción 1</p>
+                        <button>Learn more</button>
                     </a>
-                    </div>
-                    <div class="carrusel-item">
-                    <a href="#">
-                        <img src="ruta_de_la_imagen_2" alt="descripción_de_la_imagen_2">
-                        <p>Descripción del segundo elemento.</p>
-                    </a>
-                    </div>
-                    <div class="carrusel-item">
-                    <a href="#">
-                        <img src="ruta_de_la_imagen_3" alt="descripción_de_la_imagen_3">
-                        <p>Descripción del tercer elemento.</p>
-                    </a>
-                    </div>
+
                 </div>
-              </div>              
-        </section>
-
-        <section class="seccion" id="cartas">
-            <div class="presentacion">
-                <p>
-                    Aquí encontrarás una amplia selección de barajas de cartas de diferentes tipos, diseños y estilos, perfectas para coleccionar, jugar o hacer trucos de magia.
-
-                    Nuestra página web ofrece información detallada sobre las características de cada baraja, incluyendo el tamaño, material, diseño y detalles adicionales que las hacen únicas. Además, proporcionamos consejos útiles para mantener tus barajas de cartas en perfectas condiciones y cómo mejorar tu técnica de juego.
-                    
-                    En nuestra tienda en línea, puedes encontrar una amplia variedad de barajas de cartas de alta calidad, desde las más clásicas hasta las más modernas y artísticas. Nuestro equipo se encarga de seleccionar cuidadosamente cada producto, asegurándose de ofrecer solo las mejores opciones disponibles en el mercado.
-                    
-                    Si eres un entusiasta de las barajas de cartas o simplemente estás buscando un regalo especial para alguien que lo sea, ¡nuestra página web es el lugar perfecto para ti! Explora nuestra selección y descubre las barajas de cartas que se adapten a tus gustos y necesidades.
-                </p>
+                <div class="elemento">
+                    <a href="cartas/mint.html">
+                        <img src="imagenes/mint.jpeg" alt="Foto 2">
+                        <h3>Título 2</h3>
+                        <p>Descripción 2</p>
+                        <button>Learn more</button>
+                    </a>
+                </div>
+                <div class="elemento">
+                    <img src="imagenes/mementoMori.jpg" alt="Foto 3">
+                    <h3>Título 3</h3>
+                    <p>Descripción 3</p>
+                    <button>Learn more</button>
+                </div>
             </div>
-            <div class="carrusel">
-                <div class="carrusel">
-                    <div class="fila"></div>
-                        <div class="carrusel-item">
-                        <a href="./cartas/mementoMori.html">
-                            <img src="imagenes/mementoMori.jpg" alt="descripción_de_la_imagen_1">
-                            <p>Descripción del primer elemento.</p>
-                        </a>
-                        </div>
-                        <div class="carrusel-item">
-                        <a href="#">
-                            <img src="imagenes/mementoMori.jpg" alt="descripción_de_la_imagen_2">
-                            <p>Descripción del segundo elemento.</p>
-                        </a>
-                        </div>
-                        <div class="carrusel-item">
-                        <a href="#">
-                            <img src="imagenes/mementoMori.jpg" alt="descripción_de_la_imagen_3">
-                            <p>Descripción del tercer elemento.</p>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-              
         </section>
 
-        <section class="seccion" id="mesa">
-            <div class="presentacion"></div>
-            <div class="carrusel">
-                <div class="carrusel-item">
-                  <a href="#">
-                    <img src="ruta_de_la_imagen_1" alt="descripción_de_la_imagen_1">
-                    <p>Descripción del primer elemento.</p>
-                  </a>
+        <section id="cartas">
+            <div class="inicioSeccion">
+                <div class="intro">
+                    <h2>Barajas de cartas</h2>
+                    <p>
+                        Aquí encontrarás una amplia selección de barajas de cartas de diferentes tipos, diseños y
+                        estilos, perfectas para coleccionar, jugar o hacer trucos de magia.
+
+                        Nuestra página web ofrece información detallada sobre las características de cada baraja,
+                        incluyendo
+                        el tamaño, material, diseño y detalles adicionales que las hacen únicas.
+
+                        Si eres un entusiasta de las barajas de cartas o simplemente estás buscando un regalo especial
+                        para
+                        alguien que lo sea, ¡nuestra página web es el lugar perfecto para ti! Explora nuestra selección
+                        y
+                        descubre las barajas de cartas que se adapten a tus gustos y necesidades.
+                    </p>
                 </div>
-                <div class="carrusel-item">
-                  <a href="#">
-                    <img src="ruta_de_la_imagen_2" alt="descripción_de_la_imagen_2">
-                    <p>Descripción del segundo elemento.</p>
-                  </a>
+            </div>
+            <div class="contenedor">
+                <div class="elemento">
+                    <a href="cartas/mementoMori.html">
+                        <img src="imagenes/mementoMori.jpg" alt="mementoMori">
+                        <h3>Memento Mori</h3>
+                        <p>Low Poly de muerte</p>
+                        <button>Learn more</button>
+                    </a>
                 </div>
-                <div class="carrusel-item">
-                  <a href="#">
-                    <img src="ruta_de_la_imagen_3" alt="descripción_de_la_imagen_3">
-                    <p>Descripción del tercer elemento.</p>
-                  </a>
+                <div class="elemento">
+                    <a href="cartas/mint.html">
+                        <img src="imagenes/mementoMori.jpg" alt="Foto 2">
+                        <h3>Mint</h3>
+                        <p>Reinvención de un clásico</p>
+                        <button>Learn more</button>
+                    </a>
                 </div>
-              </div>              
+                <div class="elemento">
+                    <img src="imagenes/mementoMori.jpg" alt="Foto 3">
+                    <h3>Título 3</h3>
+                    <p>Descripción 3</p>
+                    <button>Learn more</button>
+                </div>
+            </div>
         </section>
 
-        <section class="seccion" id="rubik">
-            <div class="presentacion"></div>
-            <div class="carrusel">
-                <div class="carrusel-item">
-                  <a href="#">
-                    <img src="ruta_de_la_imagen_1" alt="descripción_de_la_imagen_1">
-                    <p>Descripción del primer elemento.</p>
-                  </a>
+        <section id="rubik">
+            <div class="inicioSeccion">
+                <div class="intro">
+                    <h2>Cubos de Rubik</h2>
+                    <p>
+                        Aquí encontrarás todo lo relacionado con uno de los juegos de ingenio más populares del mundo.
+                        Descubre los distintos tipos de cubos, aprende a resolverlos y mejora tus tiempos en
+                        competiciones. Además, te ofrecemos trucos y consejos para que puedas superar tus propios
+                        récords y sorprender a tus amigos. ¡Prepárate para desafiar a tu mente con el fascinante mundo
+                        de los cubos de Rubik!
+                    </p>
                 </div>
-                <div class="carrusel-item">
-                  <a href="#">
-                    <img src="ruta_de_la_imagen_2" alt="descripción_de_la_imagen_2">
-                    <p>Descripción del segundo elemento.</p>
-                  </a>
+            </div>
+            <div class="contenedor">
+                <div class="elemento">
+                    <img src="imagenes/mementoMori.jpg" alt="Foto 1">
+                    <h3>Título 1</h3>
+                    <p>Descripción 1</p>
+                    <button>Learn more</button>
                 </div>
-                <div class="carrusel-item">
-                  <a href="#">
-                    <img src="ruta_de_la_imagen_3" alt="descripción_de_la_imagen_3">
-                    <p>Descripción del tercer elemento.</p>
-                  </a>
+                <div class="elemento">
+                    <img src="imagenes/mementoMori.jpg" alt="Foto 2">
+                    <h3>Título 2</h3>
+                    <p>Descripción 2</p>
+                    <button>Learn more</button>
                 </div>
-              </div>              
+                <div class="elemento">
+                    <img src="imagenes/mementoMori.jpg" alt="Foto 3">
+                    <h3>Título 3</h3>
+                    <p>Descripción 3</p>
+                    <button>Learn more</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="juegosMesa">
+            <div class="inicioSeccion">
+                <div class="intro">
+                    <h2>Juegos de mesa</h2>
+                    <p>
+                        Aquí encontrarás una selección de los mejores juegos de mesa para disfrutar en familia o con
+                        amigos. Desde los clásicos como Monopoly y Scrabble hasta los más novedosos y emocionantes
+                        juegos de estrategia, tenemos algo para todos los gustos.
+                    </p>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="elemento">
+                    <img src="imagenes/mementoMori.jpg" alt="Foto 1">
+                    <h3>Título 1</h3>
+                    <p>Descripción 1</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="elemento">
+                    <img src="imagenes/mementoMori.jpg" alt="Foto 2">
+                    <h3>Título 2</h3>
+                    <p>Descripción 2</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="elemento">
+                    <img src="imagenes/mementoMori.jpg" alt="Foto 3">
+                    <h3>Título 3</h3>
+                    <p>Descripción 3</p>
+                    <button>Learn more</button>
+                </div>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer-contenido">
+
+        <h3>Paradox Logic</h3>
+        <p>Ofrecemos desafíos de lógica, barajas de cartas, juegos de mesa y cubos de
+            Rubik, con tutoriales y trucos para mejorar tus habilidades. Únete y diviértete mientras ejercitas tu
+            cerebro.
+        </p>
+        <div class="iconos-redes-sociales">
+            <a href="https://www.twitter.com/Nicoferin"><img src="imagenes/youtube.png" alt="Youtube" width="18"></a>
+            <a href="https://www.twitter.com/Nicoferin"><img src="imagenes/twitter.png" alt="Twitter" width="18"></a>
+            <a href="https://www.twitter.com/Nicoferin"><img src="imagenes/instagram.png" alt="Instagram"
+                    width="18"></a>
+
+
+        </div>
+        <p>&copy; 2023 Paradox Logic</p>
+
+    </footer>
 </body>
+
 </html>

@@ -31,3 +31,11 @@ button {
 .borde-abajo {
     border-bottom: 2px solid black;
 }
+
+.casilla-elegida {
+    border: 2px solid blue;
+}
+
+.initial{
+    font-weight: bold;
+}

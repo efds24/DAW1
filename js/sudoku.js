@@ -23,7 +23,7 @@ const sudokuSize = 9;
           cell.id = `${i}${j}`;
           if (board[i][j] !== 0) {
             cell.innerText = board[i][j];
-            cell.classList.add("initial");
+            cell.classList.add("initial");  //CAMBIAR ESTO
           }
           if ((j+1) % 3 === 0 && j !== 8) {
             cell.classList.add('borde-derecho');

@@ -1,1 +1,12 @@
-@import "main.css"
+@import "main.css";
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.prueba{
+    max-width: 40%;
+}
+.prueba2{
+    max-width: 40%;
+}

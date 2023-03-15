@@ -5,43 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memento Mori</title>
+    <title>Rubik 3x3</title>
     <link rel="stylesheet" href="../css/cuboRubik.css">
     <link rel="icon" href="../imagenes/logoarriba.png" type="image/x-icon">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".prueba").hide();
+            $("li").on('click', function () {
+                $(".prueba").toggle();
+            })
+            $("li.L").on('click',function () {
+                $(".prueba2").toggle();
+            })
+        })
+    </script>
 </head>
 
 <body>
     <header>
         <a href="../index.html"><img class="logo" src="../imagenes/logo.png" alt="logo"></a>
-        
+
     </header>
     <main>
 
 
-        <div class="container">
-            <div class="image">
-                <img src="../imagenes/3x3.jpeg" alt="3x3">
-                
-            </div>
-            <div class="text">
-                <h1>Cubo de Rubik 3x3x3</h1>
-                <p>Bienvenidos a la página web del Cubo de Rubik 3x3, el rompecabezas más icónico y popular del mundo. Desde su creación en la década de 1970, el Cubo de Rubik ha cautivado a millones de personas de todas las edades con su complejidad, belleza y desafío. En esta página web, podrás encontrar todo lo que necesitas saber sobre el Cubo de Rubik 3x3, desde sus orígenes hasta los métodos más avanzados para resolverlo.</p>
-                
-            </div>
-            <div class="tutorial">
-                <p>En la siguiente sección encontrarás un sencillo tutorial para resolverlo</p>
-                <h2>Consideraciones previas</h2>
-                <p>Es necesario conocer cuales son los movimientos y su notación:</p>
-                <ul>
-                    <li>L: Giro en el sentido de las agujas del reloj en la cara izquierda</li>
-                    <li>R: Giro en el sentido de las agujas del reloj en la cara derecha</li>
-                    <li>U: Giro en el sentido de las agujas del reloj en la cara superior</li>
-                    <li>D: Giro en el sentido de las agujas del reloj en la cara inferior</li>
-                    <li>F: Giro en el sentido de las agujas del reloj en la cara frontal</li>
-                    <li>B: Giro en el sentido de las agujas del reloj en la cara trasera</li>
-                </ul>
-            </div>
+        <div class="text">
+            <h1>Cubo de Rubik 3x3x3</h1>
+            <p>Bienvenidos a la página web del Cubo de Rubik 3x3, el rompecabezas más icónico y popular del mundo. Desde
+                su creación en la década de 1970, el Cubo de Rubik ha cautivado a millones de personas de todas las
+                edades con su complejidad, belleza y desafío. En esta página web, podrás encontrar todo lo que necesitas
+                saber sobre el Cubo de Rubik 3x3, desde sus orígenes hasta los métodos más avanzados para resolverlo.
+            </p>
 
+        </div>
+        <div class="tutorial">
+            <p>En la siguiente sección encontrarás un sencillo tutorial para resolverlo</p>
+            <h2>Consideraciones previas</h2>
+            <p>Es necesario conocer cuales son los movimientos y su notación:</p>
+            <ul>
+                <li class="L">L: Giro en el sentido de las agujas del reloj en la cara izquierda</li>
+                <li>R: Giro en el sentido de las agujas del reloj en la cara derecha</li>
+                <li>U: Giro en el sentido de las agujas del reloj en la cara superior</li>
+                <li>D: Giro en el sentido de las agujas del reloj en la cara inferior</li>
+                <li>F: Giro en el sentido de las agujas del reloj en la cara frontal</li>
+                <li>B: Giro en el sentido de las agujas del reloj en la cara trasera</li>
+                <p>Para denotar un giro en el sentido contrario de las agujas del reloj se utilizará el símbolo '.</p>
+            </ul>
+            <img class="prueba" src="../imagenes/3x3.jpg" alt="3x3">
+            <img class="prueba2" src="../imagenes/logo.png" alt="3x3">
         </div>
     </main>
     <footer class="footer-contenido">

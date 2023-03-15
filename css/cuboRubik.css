@@ -1,12 +1,21 @@
 @import "main.css";
 
-body{
+body {
     padding: 0px;
     margin: 0px;
 }
-.prueba{
-    max-width: 40%;
+
+li{
+    margin-bottom: 10px;
 }
-.prueba2{
-    max-width: 40%;
+
+img.cubo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.mov{
+    font-size: 45px;
+    color:white;
 }

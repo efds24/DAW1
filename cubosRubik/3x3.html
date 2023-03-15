@@ -11,12 +11,64 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".prueba").hide();
-            $("li").on('click', function () {
-                $(".prueba").toggle();
+            $(".cubo").hide();
+            $(".base").show();
+            $("li.U").on('click',function () {
+                if ($(".base").is(":visible")) {
+                    $(".cubo").hide();
+                    $("img.U").show();
+                    $("p.mov").text("U");
+                } else {
+                    $(".cubo").hide();
+                    $(".base").show();
+                    $("p.mov").text("U'");
+                }
+                
+            })
+            $("li.R").on('click',function () {
+                if ($(".base").is(":visible")) {
+                    $(".cubo").hide();
+                    $("img.R").show();
+                } else {
+                    $(".cubo").hide();
+                    $(".base").show();
+                }
             })
             $("li.L").on('click',function () {
-                $(".prueba2").toggle();
+                if ($(".base").is(":visible")) {
+                    $(".cubo").hide();
+                    $("img.L").show();
+                } else {
+                    $(".cubo").hide();
+                    $(".base").show();
+                }
+            })
+            $("li.F").on('click',function () {
+                if ($(".base").is(":visible")) {
+                    $(".cubo").hide();
+                    $("img.F").show();
+                } else {
+                    $(".cubo").hide();
+                    $(".base").show();
+                }
+            })
+            $("li.B").on('click',function () {
+                if ($(".base").is(":visible")) {
+                    $(".cubo").hide();
+                    $("img.B").show();
+                } else {
+                    $(".cubo").hide();
+                    $(".base").show();
+                }
+            })
+            $("li.D").on('click',function () {
+                if ($(".base").is(":visible")) {
+                    $(".cubo").hide();
+                    $("img.D").show();
+                } else {
+                    $(".cubo").hide();
+                    $(".base").show();
+                }
             })
         })
     </script>
@@ -56,15 +108,21 @@
             <p>Es necesario conocer cuales son los movimientos y su notación:</p>
             <ul>
                 <li class="L">L: Giro en el sentido de las agujas del reloj en la cara izquierda</li>
-                <li>R: Giro en el sentido de las agujas del reloj en la cara derecha</li>
-                <li>U: Giro en el sentido de las agujas del reloj en la cara superior</li>
-                <li>D: Giro en el sentido de las agujas del reloj en la cara inferior</li>
-                <li>F: Giro en el sentido de las agujas del reloj en la cara frontal</li>
-                <li>B: Giro en el sentido de las agujas del reloj en la cara trasera</li>
+                <li class="R">R: Giro en el sentido de las agujas del reloj en la cara derecha</li>
+                <li class="U">U: Giro en el sentido de las agujas del reloj en la cara superior</li>
+                <li class="D">D: Giro en el sentido de las agujas del reloj en la cara inferior</li>
+                <li class="F">F: Giro en el sentido de las agujas del reloj en la cara frontal</li>
+                <li class="B">B: Giro en el sentido de las agujas del reloj en la cara trasera</li>
                 <p>Para denotar un giro en el sentido contrario de las agujas del reloj se utilizará el símbolo '.</p>
             </ul>
-            <img class="prueba" src="../imagenes/3x3.jpg" alt="3x3">
-            <img class="prueba2" src="../imagenes/logo.png" alt="3x3">
+            <p class="mov"></p>
+            <img class="base cubo" src="../imagenes/rubiks.png" alt="3x3">
+            <img class="U cubo" src="../imagenes/U.png" alt="U">
+            <img class="R cubo" src="../imagenes/R.png" alt="R">
+            <img class="D cubo" src="../imagenes/D.png" alt="D">
+            <img class="B cubo" src="../imagenes/B.png" alt="B">
+            <img class="F cubo" src="../imagenes/F.png" alt="F">
+            <img class="L cubo" src="../imagenes/L.png" alt="L">
         </div>
     </main>
     <footer class="footer-contenido">

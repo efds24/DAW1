@@ -91,12 +91,12 @@
         </figure>
         <nav>
             <ul>
-                <li><a href="#">ABOUT</a></li>
+                <li><a class="menu" href="../about.html">ABOUT</a></li>
                 <li class="dropdown">
-                    <a href="../index.html">HOME</a>
+                    <a class="menu" href="../index.html">HOME</a>
 
                 </li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a class="menu" href="#">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -113,18 +113,21 @@
 
         </div>
         <div class="tutorial">
-            <p>En la siguiente sección encontrarás un sencillo tutorial para resolverlo</p>
-            <h2>Consideraciones previas</h2>
-            <p>Es necesario conocer cuales son los movimientos y su notación:</p>
-            <ul>
-                <li class="L">L: Giro en el sentido de las agujas del reloj en la cara izquierda</li>
-                <li class="R">R: Giro en el sentido de las agujas del reloj en la cara derecha</li>
-                <li class="U">U: Giro en el sentido de las agujas del reloj en la cara superior</li>
-                <li class="D">D: Giro en el sentido de las agujas del reloj en la cara inferior</li>
-                <li class="F">F: Giro en el sentido de las agujas del reloj en la cara frontal</li>
-                <li class="B">B: Giro en el sentido de las agujas del reloj en la cara trasera</li>
-            </ul>
-            <p>Para denotar un giro en el sentido contrario de las agujas del reloj se utilizará el símbolo '. En el cubo siguiente puedes probar los movimientos.</p>
+            <div>
+                <p>En la siguiente sección encontrarás un sencillo tutorial para resolverlo</p>
+                <h2>Consideraciones previas</h2>
+                <p>Es necesario conocer cuales son los movimientos y su notación:</p>
+                <ul>
+                    <li class="L">L: Giro en el sentido de las agujas del reloj en la cara izquierda</li>
+                    <li class="R">R: Giro en el sentido de las agujas del reloj en la cara derecha</li>
+                    <li class="U">U: Giro en el sentido de las agujas del reloj en la cara superior</li>
+                    <li class="D">D: Giro en el sentido de las agujas del reloj en la cara inferior</li>
+                    <li class="F">F: Giro en el sentido de las agujas del reloj en la cara frontal</li>
+                    <li class="B">B: Giro en el sentido de las agujas del reloj en la cara trasera</li>
+                </ul>
+                <p>Para denotar un giro en el sentido contrario de las agujas del reloj se utilizará el símbolo '. En el
+                    cubo siguiente puedes probar los movimientos.</p>
+            </div>
             <div class="container">
                 <img class="base cubo" src="../imagenes/rubiks.png" alt="3x3">
                 <img class="U cubo" src="../imagenes/U.png" alt="U">
@@ -135,8 +138,88 @@
                 <img class="L cubo" src="../imagenes/L.png" alt="L">
                 <p class="mov"> </p>
             </div>
+            <div>
+                <h2>Primer paso: Resolver la cruz</h2>
+                <p>El primer paso para resolver el cubo de Rubik es formar una cruz en la cara superior del cubo. Para
+                    hacer esto, debes encontrar un borde con el color central correspondiente al color del centro de la
+                    cruz. Luego, debes colocar ese borde en la posición correcta en relación a los demás bordes.</p>
+                <img class="res" src="../imagenes/cruz.png" alt="cruz">
+            </div>
+            <div>
+                <h2>Segundo paso: Resolver las esquinas</h2>
+                <p>Una vez que hayas completado la cruz superior, debes resolver las esquinas superiores. Para hacer
+                    esto, debes encontrar una esquina que tenga el color correcto y colocarla en la posición correcta en
+                    relación a las demás esquinas. Para colocarla, coloca la esquina encontrada bajo su posición, y,
+                    realiza un giro D-F-D'-F' (si el color blanco mira hacia la derecha) o un giro D'-R'-D-R (si el
+                    color blanco mira hacia la izquierda). Si el color blanco mira hacia abajo, puedes transformarlo en
+                    uno de los casos anteriores mediante: R'-D-D-R-D.</p>
+                <img class="res" src="../imagenes/esquinas.png" alt="esquinas">
+            </div>
+            <div>
+                <h2>Tercer paso: Aristas de la segunda capa</h2>
+                <p>Una vez que hayas resuelto las esquinas de la primera capa, el siguiente paso es resolver la segunda
+                    capa del cubo. Antes de seguir con este paso, giraremos el cubo, con la capa ya completada en la
+                    parte inferior. Ahora, coloca la arista que se quiera insertar alineada con su color, aparecen dos
+                    casos:
+                </p>
+                <ul>
+                    <li>La arista va a la izquierda → U'-L'-U-L-U-F-U'-F'</li>
+                    <li>La arista va a la derecha → U-R-U'-R'-U'-F'-U-F</li>
+                </ul>
+                <p>En caso de no existir en la capa superior las aristas a colocar, significa que estas están mal
+                    colocadas en la cara del medio, para llevarlas a la cara de arriba, utiliza uno de los algoritmos
+                    anteriores.</p>
+                <img class="res" src="../imagenes/aristas.png" alt="aristas">
+            </div>
+            <div>
+                <h2>Cuarto paso: Cruz de la cara superior</h2>
+                <p>
+                    Finalmente, vamos a hacer la cruz en la cara superior pero no te preocupes si los colores laterales
+                    no coinciden con los colores del centro de la cara, eso lo arreglaremos en el próximo paso. En este
+                    caso pueden aparecer 3 casos:
+                </p>
+                <ul>
+                    <li>Las aristas tienen forma de L → L-U-F-U'-F'-L'</li>
+                    <li>Las aristas tienen forma de línea → L-F-U-F'-U'-L'</li>
+                    <li>No hay aristas amarillas → Hacer uno de los algoritmos anteriores y luego el contrario</li>
+                </ul>
+                <div class="cont">
+                    <img src="../imagenes/cruzb.png" alt="L" class="parcial">
+                    <img src="../imagenes/linea.png" alt="linea" class="parcial">
+                    <img src="../imagenes/aristas.png" alt="nada" class="parcial">
+                </div>
+                <p>También existe el caso de la cruz ya esté hecha. Pasaríamos entonces al siguiente paso.</p>
+                <img class="res" src="../imagenes/cruza.png" alt="cruzArriba">
+            </div>
+            <div>
+                <h2>Quinto paso: Orientar las aristas superiores</h2>
+                <p>
+                    Ahora, vamos a retomar el problema que evitamos en el anterior paso, colocar la cruz superior. Pueden aparecer dos casos, pero uno de ellos se resuelve llegando al otro. En primer lugar buscaremos dos esquinas bien colocadas, las colocamos de modo que no se vean. Aplicamos el siguiente algoritmo: U-R-U-R'-U-R-U-U-R'. En el otro caso, las bien orientadas son contrarias. Para este caso colocamos la arista bien colocada a la derecha y aplicamos el algoritmo anterior, lo que da lugar al caso anterior.
+                </p>
+                <div class="cont">
+                    <img src="../imagenes/orienta.png" alt="orientA" class="parcial">
+                    <img src="../imagenes/orientb.png" alt="linea" class="parcial">
+                </div>
+                <p>Al igual que en el caso anterior, la cara superior puede estar correctamente orientada. En ese caso pasaríamos al último paso.</p>
+                <img class="res" src="../imagenes/orient.png" alt="cruzArriba">
+            </div>
+            <div>
+                <h2>Sexto paso: Colocar las esquinas superiores</h2>
+                <p>
+                    En este paso colocaremos las esquinas superiores en sus posiciones correctas, para ello buscamos una esquina que se encuentre bien colocada (puede estar mal orientada), la colocamos a la derecha y realizamos el siguiente algoritmo, tantas veces como sea necesario: L'-U-R-U'-L-U-R'
+                </p>
+                <img class="res" src="../imagenes/coloc.png" alt="Final">
+            </div>
+            <div>
+                <h2>Séptimo paso: Orientar las esquinas superiores</h2>
+                <p>
+                    Por último orientaremos las esquinas. Todos los casos se resuelven igual, independientemente de cuantas esquinas estén descolocadas y en que posición. Colocamos la esquina que queremos girar y aplicamos el siguiente algoritmo hasta que esté orientada correctamente: R'-D'-R-D. A la que la esquina esté orientada, colocamos la siguiente esquina a colocar a la derecha y repetimos el algoritmo.
+                </p>
+                <img class="res" src="../imagenes/fin.png" alt="Final">
+            </div>
         </div>
     </main>
+
     <footer class="footer-contenido">
         <h3>Paradox Logic</h3>
         <p>Ofrecemos desafíos de lógica, barajas de cartas, juegos de mesa y cubos de

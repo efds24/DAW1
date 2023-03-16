@@ -8,7 +8,7 @@
     <title>About</title>
     <link rel="stylesheet" href="css/about.css">
     <link rel="icon" href="imagenes/logoarriba.png" type="image/x-icon">
-    <script src="js/about.js"></script>
+
 </head>
 
 <body>
@@ -61,9 +61,9 @@
         comunidad de jugadores apasionados.
 
         <h2>Contáctanos</h2>
-        <form action="enviar.php" method="post">
+        <form action="" method="post">
             <label for="nombre">Nombre completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombreFormulario" name="nombre" required>
             
             <label for="correo">Correo electrónico:</label>
             <input type="email" id="correo" name="correo" required>
@@ -77,7 +77,7 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" required></textarea>
             
-            <button type="submit">Enviar mensaje</button>
+            <button type="submit" id="submitBoton">Enviar mensaje</button>
         </form>
           
     </main>
@@ -97,6 +97,7 @@
         </div>
         <p>&copy; 2023 Paradox Logic</p>
     </footer>
+    
 </body>
 
 </html>

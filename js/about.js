@@ -1,38 +1,28 @@
-const nombreInput = document.getElementById('nombre');
+const nombreInput = document.getElementById("nombreFormulario");
 const movilInput = document.getElementById('movil');
+const boton = document.getElementById("submitBoton")
 
 function isName(name){
-    const regex = /^[A-Z][a-z]+(\s[A-Z][a-z]+)*$/;
+    const regex = /^[a-záéíóúüñ]+([\s][a-záéíóúüñ]+)*[\s][a-záéíóúüñ]+$/i;
     return regex.test(nombre);
 }
 
 function isNumber(movil){
-    const regex = /^(?:(?:(?:\+|00)34\D?))?(?:6(?:[ -]?\d){8}|7[1234](?:[ -]?\d){7})$/;
+    const regex = /^[6789]\d{8}$/;
     return regex.test(movil);
 }
 
-nombreInput.addEventListener('input', function() {
-  const esValido = isName(nombreInput.value);
-  nombreInput.setCustomValidity(esValido ? '' : 'Por favor, ingrese un nombre completo válido');
-});
+function comprobarFormulario(){
+  const esNombreValido = isName(nombreInput.value);
+  nombreInput.setCustomValidity(esNombreValido ? '' : 'Por favor, ingrese un nombre completo válido');
+  if(esNombreValido){
+    nombreInput.style("color","red"); 
+  }
+  const esTelefonoValido = isName(movilInput.value);
+  movilInput.setCustomValidity(esTelefonoValido ? '' : 'Por favor, ingrese un teléfono móvil español válido');
+  if(esTelefonoValido){
+    movilInput.style("color","red"); 
+  }
+}
 
-nombreInput.addEventListener('invalid', function() {
-  nombreInput.setCustomValidity('Por favor, ingrese un nombre completo válido');
-});
-
-nombreInput.addEventListener('change', function() {
-  nombreInput.reportValidity();
-});
-
-movilInput.addEventListener('input', function() {
-    const esValido = isName(movilInput.value);
-    movilInput.setCustomValidity(esValido ? '' : 'Por favor, ingrese un teléfono móvil español válido');
-});
-  
-movilInput.addEventListener('invalid', function() {
-movilInput.setCustomValidity('Por favor, ingrese un teléfono móvil español válido');
-});
-
-movilInput.addEventListener('change', function() {
-movilInput.reportValidity();
-});
+boton.addEventListener('click', comprobarFormulario);

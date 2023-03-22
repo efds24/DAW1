@@ -11,6 +11,12 @@ form {
     font-family: 'Courier New', Courier, monospace;
 }
 
+main{
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2%;
+  }
+
 label {
     font-weight: bold;
     margin-bottom: 5px;

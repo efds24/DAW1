@@ -8,6 +8,7 @@
     <title>Paradox Logic</title>
     <link rel="icon" href="imagenes/logoarriba.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
+    
 </head>
 
 <body>
@@ -33,9 +34,9 @@
             </p>
         </div>
     </header>
-    <main>
+    <main id="prueba">
         <section id="juegosLogica">
-            <div class="inicioSeccion">
+            <div class="inicioSeccion snap">
                 <div class="intro">
                     <h2>Juegos de lógica</h2>
                     <p>
@@ -46,7 +47,7 @@
                     </p>
                 </div>
             </div>
-            <div class="contenedor">
+            <div class="contenedor snap">   <!--Cambiar esto en caso de que no guste-->
                 <div class="elemento">
                     <a href="juegosLogica/sudoku.html">
                         <img src="imagenes/sudoku1.jpeg" alt="Sudoku">
@@ -71,7 +72,7 @@
             </div>
         </section>
 
-        <section id="cartas">
+        <section id="cartas" class="snap">
             <div class="inicioSeccion">
                 <div class="intro">
                     <h2>Barajas de cartas</h2>
@@ -119,7 +120,7 @@
             </div>
         </section>
 
-        <section id="rubik">
+        <section id="rubik" class="snap">
             <div class="inicioSeccion">
                 <div class="intro">
                     <h2>Cubos de Rubik</h2>
@@ -142,10 +143,12 @@
                     </a>
                 </div>
                 <div class="elemento">
-                    <img src="imagenes/mementoMori.jpg" alt="Foto 2">
-                    <h3>Pyraminx</h3>
-                    <p>Un "cubo" muy interesante</p>
-                    <button>Learn more</button>
+                    <a href="./cubosRubik/pyramix.html">
+                        <img src="imagenes/pyraminx.jpg" alt="Pyraminx">
+                        <h3>Pyraminx</h3>
+                        <p>Un "cubo" muy interesante</p>
+                        <button>Learn more</button>
+                    </a>
                 </div>
                 <div class="elemento">
                     <img src="imagenes/mementoMori.jpg" alt="Foto 3">
@@ -156,7 +159,7 @@
             </div>
         </section>
 
-        <section id="juegosMesa">
+        <section id="juegosMesa" class="snap">
             <div class="inicioSeccion">
                 <div class="intro">
                     <h2>Juegos de mesa</h2>
@@ -207,6 +210,7 @@
         <p>&copy; 2023 Paradox Logic</p>
 
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

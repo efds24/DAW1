@@ -10,6 +10,16 @@ header{
   height: 100vh;
 }
 
+.snap{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.snap.active {
+  opacity: 1;
+}
+
+
 .encabezado-contenido {
   text-align: left;
   max-width: 960px;
@@ -27,6 +37,12 @@ header{
 .encabezado-contenido p {
   font-size: 24px;
   text-align: justify;
+}
+
+@media only screen and (max-width: 800px){
+    .intro p{
+      display: none;
+    }
 }
 
 

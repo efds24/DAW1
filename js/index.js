@@ -8,8 +8,7 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        console.log(sections);
-        if (currentScroll >= sectionTop - sectionHeight / 2) {
+        if (currentScroll >= (sectionTop - sectionHeight) / 2) {
             section.classList.add('active');
         } else {
             section.classList.remove('active');
@@ -17,4 +16,11 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// const square = document.getElementById('square');
+// let mousePos = { x: undefined, y: undefined };
 
+// window.addEventListener('mousemove',    (event) => {
+//         mousePos = { x: event.clientX, y: event.clientY };
+//         square.style.top = `${mousePos.y+10}`+"px";
+//         square.style.left = `${mousePos.x+10}`+"px";
+// });

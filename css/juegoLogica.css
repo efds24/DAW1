@@ -44,7 +44,16 @@ button {
 .pin {
     height: 50px;
     width: 50px;
-    background-color: pink;
+    background-color: rgb(255,255,255);
     border-radius: 50%;
     display: inline-block;
+}
+
+.juego{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.acabado{
+    opacity: 0.7;
 }

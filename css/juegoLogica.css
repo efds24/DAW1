@@ -27,7 +27,7 @@ button {
 
 .borde-derecho {
     border-right: 2px solid black;
-  }
+}
 
 .borde-abajo {
     border-bottom: 2px solid black;
@@ -37,6 +37,14 @@ button {
     border: 2px solid blue;
 }
 
-.initial{
+.initial {
     font-weight: bold;
+}
+
+.pin {
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
 }

@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (currentScroll >= (sectionTop - sectionHeight) / 2) {
+        if (currentScroll >= sectionTop - sectionHeight /1.3) {
             section.classList.add('active');
         } else {
             section.classList.remove('active');

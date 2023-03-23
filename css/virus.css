@@ -1,17 +1,25 @@
 @import "juegoMesa.css";
 
+html,
+body {
+  display: block;
+}
+
 .cards-grid {
     display: flex;
     grid-gap: 80px;
     padding-bottom: 60px;
+    flex-direction: row;
   }
   
   /* FLIP CARD */
   .flip-card {
-    width: 320px;
-    height: 504px;
+    width: 200px;
+    height: 297px;
     perspective: 2000px;
   }
+
+
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -34,11 +42,7 @@
     background-size: cover;
   }
   .flip-card-back {
-    font-size: 1.25rem;
     text-align: center;
-    display: grid;
-    place-items: center;
-    padding: 32px;
     background-color: #B1CFC8;
     transform: rotateY(180deg);
   }

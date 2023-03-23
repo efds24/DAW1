@@ -1,15 +1,15 @@
 @import "juegoMesa.css";
 
-html,
-body {
-  display: block;
+.cartas .title{
+    margin-left: 70px;
 }
 
-.cards-grid {
+.cartas-grid {
     display: flex;
     grid-gap: 80px;
     padding-bottom: 60px;
-    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
   /* FLIP CARD */
@@ -33,7 +33,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 28px;
+    border-radius: 12px;
     backface-visibility: hidden;
   }
   .flip-card-front {
@@ -41,9 +41,38 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .flip-card-back {
+
+  .rojo .flip-card-back{
+    background-color: #BF1520;
+  }
+
+  .verde .flip-card-back{
+    background-color: #048135;
+  }
+
+  #tratamientos .flip-card-back{
+    background-color: #8D2E88;
+  }
+
+  .naranja .flip-card-back{
+    background-color: #F29015;
+  }
+
+  .azul .flip-card-back{
+    background-color: #0188C0;
+  }
+
+  .multi .flip-card-back{
+    background: rgb(191,21,32);
+    background: linear-gradient(333deg, rgba(191,21,32,1) 0%, rgba(4,129,53,1) 28%, rgba(1,136,192,1) 61%, rgba(242,144,21,1) 96%); 
+  }
+
+  .flip-card-back p{
+    padding: 25px;
     text-align: center;
-    background-color: #B1CFC8;
+  }
+
+  .flip-card-back {
     transform: rotateY(180deg);
   }
   .flip-card:hover .flip-card-inner {

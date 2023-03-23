@@ -63,11 +63,16 @@
     pointer-events: none;
 }
 
-.recomendaciones .recomendacion h3{
-
-    font-size: 1.8em;
+.recomendaciones .recomendacion .valoracion{
     color: #fff;
     z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transform: translateY(0px);
+}
+.recomendaciones .recomendacion:hover .valoracion{
+    transform: translateY(40px);
 }
 
 .recomendaciones .recomendacion .content p{

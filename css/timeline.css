@@ -1,0 +1,28 @@
+@import "juegoMesa.css";
+
+.introduccion{
+    height: 100vh;
+}
+.container {
+    height: 100vh;
+    position: fixed;
+  }
+  
+  .container h1 {
+    position: sticky;
+    top: 0;
+  }
+  
+  .container p {
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .container.active p {
+    opacity: 1;
+  }
+  

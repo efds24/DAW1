@@ -9,7 +9,6 @@ function colocarBloque(event) {
     const celda = event.target;
     if (celda.innerHTML == "") {
         celda.innerHTML = "x";
-        celda.style.color="red";
         ronda++;
         if(ronda==5){
             document.getElementById('victory').innerHTML = "EMPATE";

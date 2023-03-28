@@ -35,6 +35,7 @@ function comprobar() {
   let text = "";
   let aux = solucion.slice();
   let total=1;
+  let negro=0;
   
   //Acierto total
   for (j = 0; j < 4; j++) {
@@ -43,6 +44,7 @@ function comprobar() {
       actual[j] = -1;
       aux[j] = -1;
       total++;
+      negro++;
     }
   }
   //Acierto parcial
@@ -60,7 +62,7 @@ function comprobar() {
     }
   }
 
-  if(total!=5)  nuevaRonda();
+  if(negro!=4)  nuevaRonda();
   else{
     let victoria = document.createElement('h1');
     victoria.style.color="red";

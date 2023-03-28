@@ -92,9 +92,14 @@ button {
 }
 
 #center{
-    margin-left: 48%;
+    margin: auto;
+    display: block;
 }
 
 #juego{
     margin-top: 60px;
+}
+
+.celda{
+    color:red;
 }

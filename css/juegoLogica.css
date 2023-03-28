@@ -100,6 +100,16 @@ button {
     margin-top: 60px;
 }
 
-.celda{
+.cell{
     color:red;
+    font-weight: bold;
+}
+#victory{
+    color:red;
+    display: block;
+    margin:auto;
+}
+
+.blue{
+    color:blue;
 }

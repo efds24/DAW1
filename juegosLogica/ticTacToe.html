@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../imagenes/logoarriba.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/juegoLogica.css">
-    <title>Mastermind</title>
+    <title>Tic Tac Toe</title>
 </head>
 
 <body>
@@ -28,55 +28,30 @@
     </header>
     <main>
         <div class="texto">
-            <h1>Mastermind</h1>
-            <p>El Mastermind es un juego de mesa estratégico para dos jugadores que se juega con fichas de colores y un
-                tablero especial. El objetivo del juego es adivinar una combinación de colores oculta por el otro
-                jugador, mientras se reciben pistas sobre qué colores están en la posición correcta y cuáles son
-                correctos pero en la posición equivocada.</p>
-
-            <p>Para comenzar el juego, uno de los jugadores elige una combinación secreta de cuatro colores diferentes
-                de entre seis colores posibles. El otro jugador debe tratar de adivinar la combinación en el menor
-                número posible de intentos. Cada intento consiste en colocar cuatro fichas de colores en una fila en el
-                tablero, y el jugador que proporciona la combinación secreta debe dar una respuesta en forma de pistas
-                sobre la exactitud de la respuesta.</p>
-
-            <p>Las pistas se proporcionan colocando fichas de colores en la fila correspondiente en el tablero para
-                indicar qué colores están en la posición correcta y cuáles son correctos pero en la posición equivocada.
-                Por ejemplo, si la combinación secreta es rojo-verde-azul-amarillo y el jugador adivina
-                rojo-verde-amarillo-azul, el jugador que proporciona la combinación secreta colocaría dos fichas negras
-                en la fila correspondiente para indicar que el rojo y el verde están en la posición correcta, y dos
-                fichas blancas para indicar que el amarillo y el azul son correctos pero están en la posición
-                equivocada.</p>
-
-            <p>El juego continúa hasta que el jugador que adivina la combinación correcta o hasta que ambos jugadores
-                acuerden terminar la partida. El jugador que adivina la combinación secreta en menos intentos gana el
-                juego.</p>
-
-            <p>El Mastermind es un juego emocionante que requiere estrategia, pensamiento lógico y habilidad para
-                deducir información a partir de pistas limitadas. Es adecuado para jugadores de todas las edades y puede
-                ser jugado en línea o en persona.</p>
-            <p>A continuación se muestra un Mastermind jugable, en el que debes adivinar una combinación generada
-                aleatoriamente. Haz click en los círculos para cambiar su color y al presionar el botón, el cuadrado de
-                la derecha indicará los aciertos totales (negros) o parciales (grises)</p>
+            <h1>Tic Tac Toe</h1>
+           
         </div>
         <div id="juego">
-            <table>
-                <tr>
-                    <td class="cell"></td>
-                    <td class="cell"></td>
-                    <td class="cell"></td>
-                </tr>
-                <tr>
-                    <td class="cell"></td>
-                    <td class="cell"></td>
-                    <td class="cell"></td>
-                </tr>
-                <tr>
-                    <td class="cell"></td>
-                    <td class="cell"></td>
-                    <td class="cell"></td>
-                </tr>
-            </table>
+            <div id="tablero">
+                <table>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+                </table>
+                <p id="victory"></p>
+            </div>
             <button id="center">Reiniciar</button>
         </div>
         <script src="../js/tictactoe.js"></script>

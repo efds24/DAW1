@@ -1,5 +1,16 @@
 @import "juegoMesa.css";
 
+.introduccion p {
+  background-color: rgba(255, 255, 255, 0.8);
+  color:black;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+
 .cartas .title{
     margin-left: 70px;
 }

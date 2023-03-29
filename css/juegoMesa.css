@@ -81,3 +81,17 @@
     font-weight: 300;
 }
 
+li{
+    padding-bottom: 10px;
+}
+
+ul li:nth-child(even)::marker{
+    color: black;
+}
+
+.foto{
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding-bottom: 10px;
+}

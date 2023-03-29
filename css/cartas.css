@@ -10,18 +10,7 @@ body{
     align-items: top;
     margin-left: 5%;
     margin-right: 5%;
-}
-
-.image {
-    flex: 45%;
-    padding: 20px;
-    
-}
-
-.image img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+    margin-bottom: 9%;
 }
 
 .text{

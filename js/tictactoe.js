@@ -38,7 +38,6 @@ function colocarBloque(event) {
 function acabo() {
     for (let i = 0; i < celdas.length; i++) {
         celdas[i].removeEventListener('click', colocarBloque);
-        celdas[i].classList.remove('blue');
     }
 }
 
@@ -52,6 +51,7 @@ function clear() {
     a.innerHTML = "";
     for (let i = 0; i < celdas.length; i++) {
         celdas[i].addEventListener('click', colocarBloque);
+        celdas[i].classList.remove('blue');
     }
     ronda=0;
 }

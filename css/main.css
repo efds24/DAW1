@@ -3,7 +3,7 @@ body {
   padding:0;
   background-color: #1c1c1c;
   font-family: 'Courier New', Courier, monospace;
-  color: #fff
+  color: #fff;
 }
 
 main{
@@ -36,11 +36,9 @@ a.menu:hover{
 }
 
 .logo {
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 0px;
   left: 40px;
-  display: flex;
-  align-items: center;
 }
 
 .logo img {

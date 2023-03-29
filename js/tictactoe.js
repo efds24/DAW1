@@ -10,12 +10,9 @@ function colocarBloque(event) {
     if (celda.innerHTML == "") {
         celda.innerHTML = "x";
         ronda++;
-        if(ronda==5){
-            document.getElementById('victory').innerHTML = "EMPATE";
-            acabo();
-        }
+        
         let vic = gano();
-        if (vic != "x" && vic != "o") {
+        if (vic != "x" && vic != "o" && ronda!=5) {
             let o = Math.round(Math.random() * 8);
             while (celdas[o].innerHTML!=""){ 
                 o = (o + 1) % 8;
@@ -31,6 +28,9 @@ function colocarBloque(event) {
             acabo();
         } else if (vic == "o") {
             document.getElementById('victory').innerHTML = "HAS PERDIDO";
+            acabo();
+        }else if(ronda==5){
+            document.getElementById('victory').innerHTML = "EMPATE";
             acabo();
         }
     }
@@ -76,7 +76,7 @@ function gano() {
         return celdas[0].innerHTML;
     }
     if (celdas[2].innerHTML === celdas[4].innerHTML && celdas[4].innerHTML === celdas[6].innerHTML && celdas[2].innerHTML != '') {
-        return celdas[0].innerHTML;
+        return celdas[2].innerHTML;
     }
 
     // Si no se cumplió ninguna de las condiciones anteriores, no hay victoria

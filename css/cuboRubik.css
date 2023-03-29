@@ -27,6 +27,11 @@ main{
     padding-right: 70px;
 }
 
+.bloque{
+    display: block;
+    border: solid;
+}
+
 .cont{
     display: flex;
     align-items: center;

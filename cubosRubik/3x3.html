@@ -13,72 +13,69 @@
         $(document).ready(function () {
             $(".cubo").hide();
             $(".base").show();
-            $("li.U").on('click', function () {
-                if ($(".base").is(":visible")) {
-                    $(".cubo").hide();
-                    $("img.U").show();
-                    $("p.mov").text("U");
-                } else {
-                    $(".cubo").hide();
-                    $(".base").show();
-                    $("p.mov").text("U'");
-                }
+            $("li.U").on('mouseenter', function () {
+
+                $(".cubo").hide();
+                $("img.U").show();
+                $("p.mov").text("U");
 
             })
-            $("li.R").on('click', function () {
-                if ($(".base").is(":visible")) {
-                    $(".cubo").hide();
-                    $("img.R").show();
-                    $("p.mov").text("R");
-                } else {
-                    $(".cubo").hide();
-                    $(".base").show();
-                    $("p.mov").text("R'");
-                }
+            $("li.U").on('mouseleave', function () {
+                $(".cubo").hide();
+                $(".base").show();
+                $("p.mov").text("U'");
             })
-            $("li.L").on('click', function () {
-                if ($(".base").is(":visible")) {
-                    $(".cubo").hide();
-                    $("img.L").show();
-                    $("p.mov").text("L");
-                } else {
-                    $(".cubo").hide();
-                    $(".base").show();
-                    $("p.mov").text("L'");
-                }
+            $("li.R").on('mouseenter', function () {
+                $(".cubo").hide();
+                $("img.R").show();
+                $("p.mov").text("R");
+
             })
-            $("li.F").on('click', function () {
-                if ($(".base").is(":visible")) {
-                    $(".cubo").hide();
-                    $("img.F").show();
-                    $("p.mov").text("F");
-                } else {
-                    $(".cubo").hide();
-                    $(".base").show();
-                    $("p.mov").text("F'");
-                }
+            $("li.R").on('mouseleave', function () {
+                $(".cubo").hide();
+                $(".base").show();
+                $("p.mov").text("R'");
             })
-            $("li.B").on('click', function () {
-                if ($(".base").is(":visible")) {
-                    $(".cubo").hide();
-                    $("img.B").show();
-                    $("p.mov").text("B");
-                } else {
-                    $(".cubo").hide();
-                    $(".base").show();
-                    $("p.mov").text("B'");
-                }
+            $("li.L").on('mouseenter', function () {
+                $(".cubo").hide();
+                $("img.L").show();
+                $("p.mov").text("L");
+
             })
-            $("li.D").on('click', function () {
-                if ($(".base").is(":visible")) {
-                    $(".cubo").hide();
-                    $("img.D").show();
-                    $("p.mov").text("D");
-                } else {
-                    $(".cubo").hide();
-                    $(".base").show();
-                    $("p.mov").text("D'");
-                }
+            $("li.L").on('mouseleave', function () {
+                $(".cubo").hide();
+                $(".base").show();
+                $("p.mov").text("L'");
+            })
+            $("li.F").on('mouseenter', function () {
+                $(".cubo").hide();
+                $("img.F").show();
+                $("p.mov").text("F");
+            })
+            $("li.F").on('mouseleave', function () {
+                $(".cubo").hide();
+                $(".base").show();
+                $("p.mov").text("F'");
+            })
+            $("li.B").on('mouseenter', function () {
+                $(".cubo").hide();
+                $("img.B").show();
+                $("p.mov").text("B");
+            })
+            $("li.B").on('mouseleave', function () {
+                $(".cubo").hide();
+                $(".base").show();
+                $("p.mov").text("B'");
+            })
+            $("li.D").on('mouseenter', function () {
+                $(".cubo").hide();
+                $("img.D").show();
+                $("p.mov").text("D");
+            })
+            $("li.D").on('mouseleave', function () {
+                $(".cubo").hide();
+                $(".base").show();
+                $("p.mov").text("D'");
             })
         })
     </script>
@@ -118,12 +115,12 @@
                 <h2>Consideraciones previas</h2>
                 <p>Es necesario conocer cuales son los movimientos y su notación:</p>
                 <ul>
-                    <li class="L">L: Giro en el sentido de las agujas del reloj en la cara izquierda</li>
-                    <li class="R">R: Giro en el sentido de las agujas del reloj en la cara derecha</li>
-                    <li class="U">U: Giro en el sentido de las agujas del reloj en la cara superior</li>
-                    <li class="D">D: Giro en el sentido de las agujas del reloj en la cara inferior</li>
-                    <li class="F">F: Giro en el sentido de las agujas del reloj en la cara frontal</li>
-                    <li class="B">B: Giro en el sentido de las agujas del reloj en la cara trasera</li>
+                    <li class="L bloque">L: Giro en el sentido de las agujas del reloj en la cara izquierda</li>
+                    <li class="R bloque">R: Giro en el sentido de las agujas del reloj en la cara derecha</li>
+                    <li class="U bloque">U: Giro en el sentido de las agujas del reloj en la cara superior</li>
+                    <li class="D bloque">D: Giro en el sentido de las agujas del reloj en la cara inferior</li>
+                    <li class="F bloque">F: Giro en el sentido de las agujas del reloj en la cara frontal</li>
+                    <li class="B bloque">B: Giro en el sentido de las agujas del reloj en la cara trasera</li>
                 </ul>
                 <p>Para denotar un giro en el sentido contrario de las agujas del reloj se utilizará el símbolo '. En el
                     cubo siguiente puedes probar los movimientos.</p>
@@ -194,26 +191,38 @@
             <div>
                 <h2>Quinto paso: Orientar las aristas superiores</h2>
                 <p>
-                    Ahora, vamos a retomar el problema que evitamos en el anterior paso, colocar la cruz superior. Pueden aparecer dos casos, pero uno de ellos se resuelve llegando al otro. En primer lugar buscaremos dos esquinas bien colocadas, las colocamos de modo que no se vean. Aplicamos el siguiente algoritmo: U-R-U-R'-U-R-U-U-R'. En el otro caso, las bien orientadas son contrarias. Para este caso colocamos la arista bien colocada a la derecha y aplicamos el algoritmo anterior, lo que da lugar al caso anterior.
+                    Ahora, vamos a retomar el problema que evitamos en el anterior paso, colocar la cruz superior.
+                    Pueden aparecer dos casos, pero uno de ellos se resuelve llegando al otro. En primer lugar
+                    buscaremos dos esquinas bien colocadas, las colocamos de modo que no se vean. Aplicamos el siguiente
+                    algoritmo: U-R-U-R'-U-R-U-U-R'. En el otro caso, las bien orientadas son contrarias. Para este caso
+                    colocamos la arista bien colocada a la derecha y aplicamos el algoritmo anterior, lo que da lugar al
+                    caso anterior.
                 </p>
                 <div class="cont">
                     <img src="../imagenes/orienta.png" alt="orientA" class="parcial">
                     <img src="../imagenes/orientb.png" alt="linea" class="parcial">
                 </div>
-                <p>Al igual que en el caso anterior, la cara superior puede estar correctamente orientada. En ese caso pasaríamos al último paso.</p>
+                <p>Al igual que en el caso anterior, la cara superior puede estar correctamente orientada. En ese caso
+                    pasaríamos al último paso.</p>
                 <img class="res" src="../imagenes/orient.png" alt="cruzArriba">
             </div>
             <div>
                 <h2>Sexto paso: Colocar las esquinas superiores</h2>
                 <p>
-                    En este paso colocaremos las esquinas superiores en sus posiciones correctas, para ello buscamos una esquina que se encuentre bien colocada (puede estar mal orientada), la colocamos a la derecha y realizamos el siguiente algoritmo, tantas veces como sea necesario: L'-U-R-U'-L-U-R'
+                    En este paso colocaremos las esquinas superiores en sus posiciones correctas, para ello buscamos una
+                    esquina que se encuentre bien colocada (puede estar mal orientada), la colocamos a la derecha y
+                    realizamos el siguiente algoritmo, tantas veces como sea necesario: L'-U-R-U'-L-U-R'
                 </p>
                 <img class="res" src="../imagenes/coloc.png" alt="Final">
             </div>
             <div>
                 <h2>Séptimo paso: Orientar las esquinas superiores</h2>
                 <p>
-                    Por último orientaremos las esquinas. Todos los casos se resuelven igual, independientemente de cuantas esquinas estén descolocadas y en que posición. Colocamos la esquina que queremos girar y aplicamos el siguiente algoritmo hasta que esté orientada correctamente: R'-D'-R-D. A la que la esquina esté orientada, colocamos la siguiente esquina a colocar a la derecha y repetimos el algoritmo.
+                    Por último orientaremos las esquinas. Todos los casos se resuelven igual, independientemente de
+                    cuantas esquinas estén descolocadas y en que posición. Colocamos la esquina que queremos girar y
+                    aplicamos el siguiente algoritmo hasta que esté orientada correctamente: R'-D'-R-D. A la que la
+                    esquina esté orientada, colocamos la siguiente esquina a colocar a la derecha y repetimos el
+                    algoritmo.
                 </p>
                 <img class="res" src="../imagenes/fin.png" alt="Final">
             </div>

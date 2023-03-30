@@ -1,15 +1,7 @@
-const boton = document.getElementById("submitBoton");
 
-function isName(name) {
-  //const regex = /[a-záéíóúüñ]+([\s][a-záéíóúüñ]+)*([\s][a-záéíóúüñ])+/i;
-  const regex = /^[a-záéíóúüñ]+\s?[a-záéíóúüñ]*\s?[a-záéíóúüñ]*$/i;
-  return regex.test(name);
-}
 
-function isNumber(movil) {
-  const regex = /[6789]\d{8}/;
-  return regex.test(movil);
-}
+isName=(name)=> (/^[a-záéíóúüñ]+\s?[a-záéíóúüñ]*\s?[a-záéíóúüñ]*$/i).test(name);
+isNumber=(movil) => (/[6789]\d{8}/).test(movil);
 
 function comprobarFormulario() {
   const nombreInput = document.getElementById("nombreFormulario");
@@ -20,4 +12,5 @@ function comprobarFormulario() {
   movilInput.setCustomValidity(esTelefonoValido ? '' : 'Por favor, ingrese un teléfono móvil español válido');
 }
 
-boton.addEventListener('submit', comprobarFormulario);
+const boton = document.getElementById("submitBoton");
+boton.addEventListener('click', comprobarFormulario);

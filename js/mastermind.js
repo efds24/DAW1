@@ -24,7 +24,7 @@ function cambiarColor(event) {
   } else if (number == 4) {
     pinElement.style.backgroundColor = "yellow";
   } else if (number == 5) {
-    pinElement.style.backgroundColor = "green";
+    pinElement.style.backgroundColor = "lime";
   } else if (number == 0) {
     pinElement.style.backgroundColor = "pink";
   }
@@ -67,7 +67,7 @@ function comprobar() {
     let victoria = document.createElement('h1');
     victoria.textContent="HAS GANADO";
     document.getElementById('center').append(victoria);
-    document.getElementById('boton').remove();
+    boton.remove();
   }
 }
 
@@ -75,8 +75,7 @@ function nuevaRonda(){
   round++;
 
   //Limpiamos lo anterior
-  let pines = document.querySelectorAll('.pin');
-  pines.forEach(pin => {
+  pins.forEach(pin => {
     pin.removeEventListener('click', cambiarColor);
     pin.removeAttribute('id');
     pin.classList.add('acabado')

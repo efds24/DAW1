@@ -18,7 +18,6 @@ function colocarBloque(event) {
                 o = (o + 1) % 8;
             }
             celdas[o].innerHTML = "o";
-            console.log(celdas[o]);
             celdas[o].classList.add('blue');
         }
         vic = gano();
@@ -34,6 +33,7 @@ function colocarBloque(event) {
         }
     }
 }
+
 function acabo() {
     for (let i = 0; i < celdas.length; i++) {
         celdas[i].removeEventListener('click', colocarBloque);
@@ -62,14 +62,12 @@ function gano() {
             return celdas[fila].innerHTML;
         }
     }
-
     // Comprobar si hay una columna con tres elementos iguales
     for (let columna = 0; columna < 3; columna++) {
         if (celdas[columna].innerHTML == celdas[columna + 3].innerHTML && celdas[columna + 3].innerHTML == celdas[columna + 6].innerHTML && celdas[columna].innerHTML != '') {
             return celdas[columna].innerHTML;
         }
     }
-
     // Comprobar las diagonales
     if (celdas[0].innerHTML == celdas[4].innerHTML && celdas[4].innerHTML == celdas[8].innerHTML && celdas[0].innerHTML != '') {
         return celdas[0].innerHTML;
@@ -77,9 +75,6 @@ function gano() {
     if (celdas[2].innerHTML === celdas[4].innerHTML && celdas[4].innerHTML === celdas[6].innerHTML && celdas[2].innerHTML != '') {
         return celdas[2].innerHTML;
     }
-
     // Si no se cumplió ninguna de las condiciones anteriores, no hay victoria
     return "";
-
-
 }

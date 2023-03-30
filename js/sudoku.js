@@ -96,8 +96,6 @@ function checkSudoku() {
 
 function cargarTablero(fCallback){
   let xhttp = new XMLHttpRequest();
-  xhttp.open("GET","../ajax/sudoku.xml",true);
-  xhttp.send();
 
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -107,10 +105,12 @@ function cargarTablero(fCallback){
         board[Math.floor(i/9)][i%9] = Number(x[i].childNodes[0].nodeValue);
         
       }
-      console.log(board);
       fCallback();
     }
   };
+  
+  xhttp.open("GET","../ajax/sudoku.xml",true);
+  xhttp.send();
 }
 
 startGame= () =>  cargarTablero(renderBoard);

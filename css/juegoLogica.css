@@ -1,5 +1,10 @@
 @import "main.css";
 
+main{
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2%;
+  }
 
 ul {
     list-style: square;
@@ -31,6 +36,10 @@ button {
 
 .borde-abajo {
     border-bottom: 2px solid black;
+}
+
+table{
+    margin-bottom: 25px;
 }
 
 .casilla-elegida {
@@ -93,6 +102,14 @@ button {
 
 #center{
     margin: auto;
+    display: flex;
+    position: relative;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+#center button{
+    position: relative;
     display: block;
 }
 
@@ -100,16 +117,48 @@ button {
     margin-top: 60px;
 }
 
+#boton{
+    position: relative;
+    display: block;
+}
+
 .cell{
     color:red;
     font-weight: bold;
+    font-size: 35px;
 }
+
 #victory{
     color:red;
-    display: block;
+    text-align: center;
     margin:auto;
+    position: relative;
 }
 
 .blue{
     color:blue;
+}
+
+#center h1{
+    color:red;
+    text-align: center;
+    margin:auto;
+    position: relative;
+}
+
+#tablero{
+    width:400px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+#tabla{
+    width: 90%;
+    height: 90%;
+}
+
+button{
+    padding: 15px 32px;
+    margin-bottom: 20px;
 }

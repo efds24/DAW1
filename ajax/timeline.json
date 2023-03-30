@@ -1,0 +1,6 @@
+{
+    "ninos":[
+        {"nombre":"nico","edad":"10"},
+        {"nombre":"pedro","edad":"20"}
+    ]
+}

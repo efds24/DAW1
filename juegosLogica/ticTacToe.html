@@ -28,12 +28,17 @@
     </header>
     <main>
         <div class="texto">
-            <h1>Tic Tac Toe</h1>
-           
+            <h1>Introducción</h1>
+            <p>El Tic Tac Toe, también conocido como Tres en Raya o Gato, es un juego de mesa clásico que se juega en una cuadrícula de 3x3 casillas. El juego consiste en que dos jugadores, X y O, colocan sus fichas alternadamente en las casillas vacías de la cuadrícula, con el objetivo de alinear tres fichas del mismo tipo en línea vertical, horizontal o diagonal.</p>
+
+            <p>El jugador que logre alinear tres fichas de su tipo antes que su oponente gana la partida. Si se llenan todas las casillas de la cuadrícula sin que ninguno de los jugadores logre alinear tres fichas, la partida se considera un empate.</p>
+                
+            <p>El Tic Tac Toe es un juego muy simple y fácil de aprender, pero a pesar de su simplicidad puede ser muy entretenido y desafiante, especialmente si se juega contra un oponente habilidoso que sabe cómo anticipar los movimientos y tratar de bloquear las jugadas del adversario.</p>
+            <p>A continuación se muestra un tablero de tres en raya donde se puede jugar.</p>
         </div>
         <div id="juego">
             <div id="tablero">
-                <table>
+                <table id="tabla">
                     <tr>
                         <td class="cell"></td>
                         <td class="cell"></td>
@@ -50,7 +55,7 @@
                         <td class="cell"></td>
                     </tr>
                 </table>
-                <p id="victory"></p>
+                <h1 id="victory"></p>
             </div>
             <button id="center">Reiniciar</button>
         </div>

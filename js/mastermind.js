@@ -65,7 +65,6 @@ function comprobar() {
   if(negro!=4)  nuevaRonda();
   else{
     let victoria = document.createElement('h1');
-    victoria.style.color="red";
     victoria.textContent="HAS GANADO";
     document.getElementById('center').append(victoria);
     document.getElementById('boton').remove();

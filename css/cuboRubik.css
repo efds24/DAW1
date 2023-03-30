@@ -59,3 +59,10 @@ img.cubo {
     flex: 1;
     max-width: 40%;
 }
+
+.text img{
+    width: 40%;
+    margin: auto;
+    display: block;
+    padding-bottom: 10px;
+}

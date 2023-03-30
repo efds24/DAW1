@@ -20,4 +20,4 @@ function comprobarFormulario() {
   movilInput.setCustomValidity(esTelefonoValido ? '' : 'Por favor, ingrese un teléfono móvil español válido');
 }
 
-boton.addEventListener('click', comprobarFormulario);
+boton.addEventListener('submit', comprobarFormulario);

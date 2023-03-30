@@ -17,7 +17,6 @@ function colocarBloque(event) {
             while (celdas[o].innerHTML!=""){ 
                 o = (o + 1) % 8;
             }
-            console.log("Añado una o en"+o);
             celdas[o].innerHTML = "o";
             console.log(celdas[o]);
             celdas[o].classList.add('blue');

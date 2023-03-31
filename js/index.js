@@ -15,12 +15,3 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
-// const square = document.getElementById('square');
-// let mousePos = { x: undefined, y: undefined };
-
-// window.addEventListener('mousemove',    (event) => {
-//         mousePos = { x: event.clientX, y: event.clientY };
-//         square.style.top = `${mousePos.y+10}`+"px";
-//         square.style.left = `${mousePos.x+10}`+"px";
-// });

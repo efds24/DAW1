@@ -1,5 +1,6 @@
 const sudokuSize = 9;
 const board = Array.from({length: 9}, () => Array(9).fill(0));
+var casillaActual;
 
 // Convertir la matriz en una cadena de texto y luego imprimir la cadena de texto en la consola
 
@@ -23,22 +24,34 @@ function renderBoard() {
         cell.classList.add('borde-abajo');
       }
       //CAMBIAR ESTO PARA HACERLO RECHULON
-      cell.onclick = function () {
-        if (!cell.classList.contains("initial")) {
-          let num = prompt("Enter a number (1-9)");
-          if (num !== null) {
-            num = parseInt(num);
-            if (num >= 1 && num <= 9) {
-              board[i][j] = num;
-              renderBoard();
-            }
-          }
-        }
-      };
+      cell.addEventListener('click',newNumber);
+      // cell.onclick = function () {
+      //   if (!cell.classList.contains("initial")) {
+      //     let num = prompt("Enter a number (1-9)");
+      //     if (num !== null) {
+      //       num = parseInt(num);
+      //       if (num >= 1 && num <= 9) {
+      //         board[i][j] = num;
+      //         renderBoard();
+      //       }
+      //     }
+      //   }
+      // };
       row.appendChild(cell);
     }
     table.appendChild(row);
   }
+}
+
+function newNumber(event){
+  casillaActual.removeEventLister('keydown',writeNumber);
+  casillaActual = event.target;
+  casillaActual.classList.add('casilla-elegida');
+  casillaActual.addEventListener('keydown',writeNumber);
+}
+
+function writeNumber(event){
+  casillaActual.innerHTML = event.key;
 }
 
 function isValid(board, row, col, num) {

@@ -1,9 +1,6 @@
 @import "juegoMesa.css";
 
-.introduccion p {
-  background-color: rgba(255, 255, 255, 0.8);
-  color:black;
-  padding: 20px;
+.introduccion p, .reglas p {
   margin-left: 40px;
   margin-right: 40px;
   font-size: 18px;
@@ -11,13 +8,10 @@
 }
 
 
-.cartas .title{
-    margin-left: 70px;
-}
 
 .cartas-grid {
     display: flex;
-    grid-gap: 80px;
+    grid-gap: 60px;
     padding-bottom: 60px;
     justify-content: center;
     flex-wrap: wrap;

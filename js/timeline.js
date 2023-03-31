@@ -40,7 +40,7 @@ function orderBlocks(){
     let ordenados = json.Evento.sort(function(a, b) {return Number(a.Ano) - Number(b.Ano)});
     for(x in ordenados){
       let bloque = document.querySelector('#bloques');
-      bloque.childNodes[x].innerHTML = ordenados.Evento[x].Nombre;
+      bloque.childNodes[x].innerHTML = ordenados[x].Nombre;
     }
   });
 }

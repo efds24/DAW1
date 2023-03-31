@@ -3,8 +3,6 @@ const board = Array.from({length: 9}, () => Array(9).fill(0));
 var casillaActual;
 let x=0;
 
-// Convertir la matriz en una cadena de texto y luego imprimir la cadena de texto en la consola
-
 function renderBoard() {
   let table = document.getElementById("sudoku");
   table.innerHTML = "";
@@ -16,7 +14,7 @@ function renderBoard() {
       cell.id = `${i}${j}`;
       if (board[i][j] !== 0) {
         cell.innerText = board[i][j];
-        cell.classList.add("initial");  //CAMBIAR ESTO
+        cell.classList.add("initial");
       }
       if ((j + 1) % 3 === 0 && j !== 8) {
         cell.classList.add('borde-derecho');
@@ -24,34 +22,21 @@ function renderBoard() {
       if ((i + 1) % 3 === 0 && i !== 8) {
         cell.classList.add('borde-abajo');
       }
-      //CAMBIAR ESTO PARA HACERLO RECHULON
       cell.addEventListener('click',newNumber);
-      // cell.onclick = function () {
-      //   if (!cell.classList.contains("initial")) {
-      //     let num = prompt("Enter a number (1-9)");
-      //     if (num !== null) {
-      //       num = parseInt(num);
-      //       if (num >= 1 && num <= 9) {
-      //         board[i][j] = num;
-      //         renderBoard();
-      //       }
-      //     }
-      //   }
-      // };
       row.appendChild(cell);
     }
     table.appendChild(row);
   }
-  casillaActual=board[0][0];
+  if(document.getElementById('victory')!=null){
+    document.getElementById('victory').remove();
+  }
 }
 
 document.addEventListener('keydown',writeNumber);
 
 function newNumber(event){
-  if(x!=0){
-    casillaActual.classList.remove('casilla-elegida');
-    console.log("hola");
-  }
+  if(x!=0)
+    casillaActual.classList.remove('casilla-elegida');  
   x++;
   casillaActual = event.target;
   casillaActual.classList.add('casilla-elegida');
@@ -65,19 +50,19 @@ function writeNumber(event){
 }
 
 function isValid(board, row, col, num) {
-  
+  //Comprueba que no se repita el numero en la fila
   for (let i = 0; i < sudokuSize; i++) {
     if (board[row][i] === num && i !== col) {
       return false;
     }
-  }
-  
+  }  
+  //Comprueba que no se repita el numero en la columna
   for (let i = 0; i < sudokuSize; i++) {
     if (board[i][col] === num && i !== row) {
       return false;
     }
-  }
-  
+  }  
+  //Comprueba que no se repita el numero en las cajas
   let boxRow = Math.floor(row / 3) * 3;
   let boxCol = Math.floor(col / 3) * 3;
   for (let i = boxRow; i < boxRow + 3; i++) {
@@ -94,28 +79,17 @@ function checkSudoku() {
   for (let i = 0; i < sudokuSize; i++) {
     for (let j = 0; j < sudokuSize; j++) {
       if (board[i][j] === 0 || !isValid(board, i, j, board[i][j])) {
-        alert("Sudoku incorrecto :(");
+        alert("El sudoku es incorrecto :(");
         return;
       }
     }
   }
-  alert("Sudoku correcto!");
+  let victory = document.createElement("h1");
+  victory.id="victory";
+  victory.innerHTML = "SUDOKU CORRECTO";
+  document.querySelector("#center").before(victory);
 }
 
-// function clearSudoku() {
-//   board = [
-//     [5, 3, 0, 0, 7, 0, 0, 0, 0],
-//     [6, 0, 0, 1, 9, 5, 0, 0, 0],
-//     [0, 9, 8, 0, 0, 0, 0, 6, 0],
-//     [8, 0, 0, 0, 6, 0, 0, 0, 3],
-//     [4, 0, 0, 8, 0, 3, 0, 0, 1],
-//     [7, 0, 0, 0, 2, 0, 0, 0, 6],
-//     [0, 6, 0, 0, 0, 0, 2, 8, 0],
-//     [0, 0, 0, 4, 1, 9, 0, 0, 5],
-//     [0, 0, 0, 0, 8, 0, 0, 7, 9]
-//   ];
-//   renderBoard();
-// }
 
 function cargarTablero(fCallback){
   let xhttp = new XMLHttpRequest();

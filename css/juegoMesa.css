@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-} */
+}*/ 
 
 main{
     padding-left: 7%;
@@ -33,8 +33,10 @@ main{
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
-    display: flex;
     justify-content: center;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -42,24 +44,25 @@ main{
 }
 
 .recomendaciones .recomendacion .title{
-    padding: 20px;
+    padding: auto;
+    transform:translateY(80px);
+    transition: all 0.5s ease-out;
 }
 
 .recomendaciones .recomendacion .content
 {
-    transform: translateY(100px);
     opacity:0;
-    transition: 0.5s;
-    padding:20px;
+    padding: 0 20px;
     text-align: center;
 }
 
-.recomendaciones .recomendacion:hover .content
+.recomendaciones .recomendacion:hover .content, .recomendaciones .recomendacion:hover .title
 {
-    transform:translateY(40px);
+    transform:translateY(0px);
     opacity: 1;
+    transition: all 0.5s ease-out;
 }
-
+/*
 .recomendaciones .recomendacion h2{
     position: absolute;
     top: -80px;
@@ -68,23 +71,17 @@ main{
     color: rgba(255, 255, 255, 0.05);
     pointer-events: none;
 }
-
-.recomendaciones .recomendacion .valoracion{
-    color: #fff;
-    z-index: 1;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    transform: translateY(0px);
-}
-.recomendaciones .recomendacion:hover .valoracion{
-    transform: translateY(40px);
-}
-
+*/
 .recomendaciones .recomendacion .content p{
     font-size: 1em;
     color: #fff;
     font-weight: 300;
+
+}
+
+.recomendacion img{
+    border-radius: 150px;
+    width: 150px;
 }
 
 li{
@@ -94,6 +91,7 @@ li{
 ul li:nth-child(even)::marker{
     color: black;
 }
+
 
 .foto{
     width: 50%;

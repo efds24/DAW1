@@ -60,6 +60,8 @@ function newNumber(event){
 function writeNumber(event){
   if(!casillaActual.classList.contains("initial") && event.keyCode>48 && event.keyCode<58)
     casillaActual.innerHTML = event.key;
+  if(!casillaActual.classList.contains("initial") && event.keyCode==8)
+    casillaActual.innerHTML = "";
 }
 
 function isValid(board, row, col, num) {

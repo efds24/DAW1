@@ -21,17 +21,12 @@ $(document).ready(function() {
   });
   */
 
-// function leerJSON() {
-//   fetch("../ajax/timeline.json").then(ajaxOK)  
-// }
-
-// function ajaxOK(response){
-//   response.text().then(muestra);
-// }
-
-// function muestra(data){
-//   console.log(data.ninos);
-//   for(x in data.ninos){
-//     console.log(data.ninos[x].nombre);
-//   }
-// }
+function leerJSON() {
+  fetch('../ajax/timeline.json')
+  .then(response => response.json())
+  .then(json => {
+    for(x in json.Evento){
+      console.log(json.Evento[x].Nombre);
+    }
+  });
+}

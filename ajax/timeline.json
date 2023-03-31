@@ -1,6 +1,6 @@
 {
-    "ninos":[
-        {"nombre":"nico","edad":"10"},
-        {"nombre":"pedro","edad":"20"}
+    "Evento":[
+        {"Nombre":"nico","edad":"10"},
+        {"Nombre":"pedro","edad":"20"}
     ]
 }

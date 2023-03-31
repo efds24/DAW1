@@ -1,10 +1,11 @@
 const solucion = [
-  Math.round(Math.random() * 5),
-  Math.round(Math.random() * 5),
-  Math.round(Math.random() * 5),
-  Math.round(Math.random() * 5)
+  Math.floor(Math.random() * 5),
+  Math.floor(Math.random() * 5),
+  Math.floor(Math.random() * 5),
+  Math.floor(Math.random() * 5)
 ];
 let actual = [6, 6, 6, 6];
+console.log(solucion);
 let round = 0;
 
 function cambiarColor(event) {
@@ -48,13 +49,13 @@ function comprobar() {
   }
   //Acierto parcial
   for (i = 0; i < 4; i++) {
-
-    if (aux[i] > 0) {
+    if (aux[i] >= 0) {
 
       for (j = 0; j < 4; j++) {
-        if (actual[j] == aux[i]) {
+        if (actual[j] == aux[i] && actual[j]>=0) {
           document.getElementById("dot"+total.toString()).style.backgroundColor="grey";
           actual[j] = -1;
+          aux[i]=-1;
           total++;
         }
       }
@@ -71,10 +72,10 @@ function comprobar() {
 }
 
 function nuevaRonda(){
-  round++;
 
+  let pines = document.querySelectorAll('.pin');
   //Limpiamos lo anterior
-  pins.forEach(pin => {
+  pines.forEach(pin => {
     pin.removeEventListener('click', cambiarColor);
     pin.removeAttribute('id');
     pin.classList.add('acabado')

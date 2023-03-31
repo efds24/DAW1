@@ -50,8 +50,9 @@ document.addEventListener('keydown',writeNumber);
 function newNumber(event){
   if(x!=0){
     casillaActual.classList.remove('casilla-elegida');
-    x++;
+    console.log("hola");
   }
+  x++;
   casillaActual = event.target;
   casillaActual.classList.add('casilla-elegida');
 }

@@ -5,7 +5,6 @@ const solucion = [
   Math.round(Math.random() * 5)
 ];
 let actual = [6, 6, 6, 6];
-console.log(solucion);
 let round = 0;
 
 function cambiarColor(event) {

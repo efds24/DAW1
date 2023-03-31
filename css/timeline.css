@@ -26,3 +26,12 @@
     opacity: 1;
   }
   
+  #bloques{
+    display: flex;
+  }
+
+  #bloques p{
+    display: block;
+    width: 18%;
+    border: solid;
+  }

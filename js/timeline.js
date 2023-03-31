@@ -27,6 +27,9 @@ function leerJSON() {
   .then(json => {
     for(x in json.Evento){
       console.log(json.Evento[x].Nombre);
+      let bloque = document.createElement("p");
+      bloque.innerHTML = json.Evento[x].Nombre;
+      document.querySelector("#juego").append(bloque);
     }
   });
 }
